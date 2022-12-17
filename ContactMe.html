@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function create_button(){
+            var answer;
+            if(confirm("Do you confirm your information?")){
+                answer = "You pressed YES";
+            }else{
+                answer = "You pressed NO";
+            }
+            document.getElementById("demo").innerHTML = ans;
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>
+        Ashkan Tariverdi
+    </title>   
+    <style>
+        footer { 
+            float: center;
+        }
+        body {
+          background-image: url("background.jpg");
+        }
+        </style>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="Abilities.html">Ablities</a>
+        <a href="Acheivments.html">Acheivments</a>
+        <a class="active" href="#ContactMe">Contact Me</a>
+    </div> 
+</head>
+
+<body>
+<font color="white" size="4">
+<p>Enter your information for me to contact you:</p>
+<form method="POST" action="confirmation.php">
+    Name:<br> <input type="text" name="fname" id="fname">
+    <br>
+    Family Name:<br> <input type="=text" name="lname" id="lname">
+    <br>
+    Phone Number:<br> <input type="=text" name="pnumber" id="pnumber">
+    <br>
+    Email:<br> <input type="text" name="email" id="email">
+    <button onclick="create_button()">confirmation</button>
+</font>
+</form>
+
+</body>
+
+<footer class="footer">
+    <font> 
+    <a href="https://github.com/ashkantariverdi82"><img src="github-logo.png" alt="github" width="30"</a>
+    <a href="mailto:ashkan_tariverdi@email.com?"><img src ="email-logo.png" alt="email" width="30"</a>
+    </font>
+</footer>
+
+
+</html>
